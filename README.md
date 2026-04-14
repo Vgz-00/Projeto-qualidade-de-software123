@@ -3,7 +3,6 @@
 ## 👥 Integrantes
 
 - Vinicius Ortiz -
-- Gabriel Piske - 
 - Erick Rodrigues -
 - Augusto Martins - 
 
