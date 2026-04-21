@@ -1,0 +1,232 @@
+# Aula 6 – Planejamento e Execução de Testes
+
+*Disciplina:* Qualidade de Software
+*Projeto:* LocalEats
+*Integrantes do grupo:*
+
+* Vinicius Ortiz
+* Augusto Martins
+* Erick Rodrigues
+
+---
+
+## 1. Plano de Testes
+
+### 1.1 Objetivo
+
+Validar funcionalidades principais do LocalEats e identificar falhas funcionais e de interface.
+
+### 1.2 Escopo
+
+**O que será testado:**
+
+* Listagem de restaurantes
+* Filtros por categoria
+* Busca
+* Navegação
+* Favoritos
+* Histórico de pedidos
+
+**O que NÃO será testado:**
+
+* Pagamentos externos
+* Login
+* Geolocalização
+* Performance
+
+### 1.3 Funcionalidades selecionadas
+
+* Explorar (listagem)
+* Filtros
+* Busca
+* Favoritos
+* Pedidos
+
+### 1.4 Estratégia de Testes
+
+**Tipos:**
+
+* [x] Funcional
+* [x] Usabilidade
+
+**Abordagem:**
+Testes manuais com cenários definidos e registro de evidências.
+
+### 1.5 Responsáveis
+
+| Nome            | Responsabilidade                     |
+| --------------- | ------------------------------------ |
+| Vinicius Ortiz  | Planejamento + CT-01, CT-02          |
+| Augusto Martins | Execução + CT-03, CT-04              |
+| Erick Rodrigues | CT-05 a CT-08 + evidências + análise |
+
+---
+
+## 2. Casos de Teste
+
+### CT-01 – Carregamento da página inicial
+
+**Pré-condição:** Acesso ao sistema
+
+**Passos:**
+
+1. Acessar a URL
+2. Aguardar carregamento
+
+**Resultado esperado:**
+Lista de restaurantes exibida
+
+---
+
+### CT-02 – Filtro por categoria
+
+**Pré-condição:** Página carregada
+
+**Passos:**
+
+1. Clicar em "Japonesa"
+
+**Resultado esperado:**
+Exibir apenas restaurantes japoneses
+
+---
+
+### CT-03 – Busca por nome
+
+**Pré-condição:** Página carregada
+
+**Passos:**
+
+1. Digitar nome no campo de busca
+
+**Resultado esperado:**
+Resultados filtrados corretamente
+
+---
+
+### CT-04 – Acessar favoritos
+
+**Pré-condição:** Menu disponível
+
+**Passos:**
+
+1. Clicar em "Meus Favoritos"
+
+**Resultado esperado:**
+Exibir lista ou mensagem de vazio
+
+---
+
+### CT-05 – Acessar pedidos
+
+**Pré-condição:** Menu disponível
+
+**Passos:**
+
+1. Clicar em "Meus Pedidos"
+
+**Resultado esperado:**
+Exibir histórico ou mensagem de vazio
+
+---
+
+### CT-06 – Busca sem resultado
+
+**Passos:**
+
+1. Buscar termo inexistente
+
+**Resultado esperado:**
+Mensagem de "nenhum resultado"
+
+---
+
+### CT-07 – Filtro + reset
+
+**Passos:**
+
+1. Filtrar por categoria
+2. Voltar para "Todos"
+
+**Resultado esperado:**
+Lista completa restaurada
+
+---
+
+### CT-08 – Acessar "Cardápio" e "Avaliações"
+
+**Passos:**
+
+1. Selecionar um restaurante
+2. Clicar em "Cardápio"
+3. Clicar em "Avaliações"
+
+**Resultado esperado:**
+Sistema deve redirecionar ou exibir conteúdo relacionado
+
+---
+
+## 3. Execução dos Testes
+
+| ID    | Resultado | Evidência                                |
+| ----- | --------- | ---------------------------------------- |
+| CT-01 | Passou    | Restaurantes carregados corretamente     |
+| CT-02 | Passou    | Filtro funcionando corretamente          |
+| CT-03 | Passou    | Busca retorna resultados corretos        |
+| CT-04 | Passou    | Página de favoritos com conteúdo         |
+| CT-05 | Passou    | Página de pedidos com conteúdo           |
+| CT-06 | Passou    | Busca sem resultado tratada corretamente |
+| CT-07 | Passou    | Filtro "Todos" restaurando lista         |
+| CT-08 | Falhou    | Botões não executam nenhuma ação         |
+
+---
+
+## 4. Análise dos Resultados
+
+**Executados:** 8
+**Passaram:** 7
+**Falharam:** 1
+
+**Problemas principais:**
+
+* Links de "Cardápio" e "Avaliações" não possuem ação
+* Funcionalidade visível, mas não implementada
+
+---
+
+## 5. Reflexão
+
+**O plano ajudou?**
+Sim, organizou a execução e facilitou a identificação do problema.
+
+**Problemas só na execução?**
+Sim, a ausência de ação nos botões só foi percebida ao interagir com a interface.
+
+**Melhorias:**
+
+* Criar testes de navegação mais detalhados
+* Validar funcionalidades clicáveis
+* Usar DevTools como apoio
+
+**Conclusão:**
+O sistema está funcional, porém possui funcionalidades incompletas que impactam a experiência do usuário.
+
+---
+
+## 6. Conclusão Geral
+
+**Qualidade:** Boa
+
+**Pontos positivos:**
+
+* Funcionalidades principais operam corretamente
+* Filtros e busca funcionando
+* Navegação entre páginas funcional
+
+**Problemas:**
+
+* "Cardápio" e "Avaliações" não funcionam
+* Funcionalidades incompletas podem confundir o usuário
+
+**Impressão geral:**
+O sistema apresenta bom funcionamento geral, mas necessita ajustes para tornar a navegação mais consistente e completa.

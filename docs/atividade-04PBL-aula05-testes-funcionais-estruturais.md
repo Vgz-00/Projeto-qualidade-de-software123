@@ -5,7 +5,6 @@
 - Vinicius Ortiz
 - Augusto Martins
 - Erick Rodrigues
-- Gabriel Piske
 
 #1. Funcionalidade
 
