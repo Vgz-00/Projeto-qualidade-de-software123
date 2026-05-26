@@ -2,9 +2,15 @@
 
 ## 👥 Integrantes
 
+# Até o PBL 05
+
 - Vinicius Ortiz -
 - Erick Rodrigues -
 - Augusto Martins - 
+
+# PBL 06 , 07 e 08
+
+- Vinicius Ortiz -
 
 ## 🎯 Objetivo do Repositório
 
