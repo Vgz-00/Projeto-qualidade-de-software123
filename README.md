@@ -12,6 +12,12 @@
 - Erick Rodrigues -
 - Augusto Martins -
 
+# PBL 09, 10, 11 e 12
+
+- Vinicius Ortiz -
+- Erick Rodrigues -
+- Augusto Martins -
+
 ## 🎯 Objetivo do Repositório
 
 Este repositório reúne todas atividades desenvolvidas no decorrer da disciplina de Qualidade de Software, 
