@@ -8,6 +8,7 @@
 | Quantidade de testes aprovados | 15 |
 | Quantidade de testes com falha | 0 |
 | Status final do pipeline local | Aprovado |
+| Status final do GitHub Actions | Aprovado |
 
 Comando usado para gerar os indicadores:
 
@@ -21,3 +22,7 @@ Resultado local:
 ...............                                                          [100%]
 15 passed
 ```
+
+Execucao do workflow:
+
+https://github.com/Vgz-00/Projeto-qualidade-de-software123/actions/runs/28829839579

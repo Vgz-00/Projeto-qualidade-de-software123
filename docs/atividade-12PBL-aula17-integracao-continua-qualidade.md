@@ -119,7 +119,7 @@ def test_quality_gate_rejeita_distancia_invalida():
 | Nome do workflow | LocalEats Quality Gate |
 | Evento que dispara a execucao | `push` e `pull_request` para a branch `main` |
 | Link para o arquivo do workflow | `.github/workflows/quality.yml` |
-| Link de uma execucao do workflow | https://github.com/Vgz-00/Projeto-qualidade-de-software123/actions/workflows/quality.yml |
+| Link de uma execucao do workflow | https://github.com/Vgz-00/Projeto-qualidade-de-software123/actions/runs/28829839579 |
 
 Codigo do workflow:
 
@@ -169,6 +169,7 @@ Indicadores gerados localmente antes do envio ao GitHub:
 | Quantidade de testes aprovados | 15 |
 | Quantidade de testes com falha | 0 |
 | Status final do pipeline local | Aprovado |
+| Status final do GitHub Actions | Aprovado |
 
 Comando:
 
@@ -181,6 +182,13 @@ Resultado:
 ```text
 ...............                                                          [100%]
 15 passed
+```
+
+Execucao no GitHub Actions:
+
+```text
+LocalEats Quality Gate - success
+Run: https://github.com/Vgz-00/Projeto-qualidade-de-software123/actions/runs/28829839579
 ```
 
 ---
